@@ -87,6 +87,23 @@ CMP CL,C6
 JNZ SPRAWDZANIE_LITER
 ```
 
+## Schemat blokowy
+
+```mermaid
+graph TD;
+    A[Rozpoczęcie programu] --> B[Wprowadzanie tekstu];
+    B --> C[Wybór liter do ukrycia];
+    C --> D[Maskowanie liter];
+    D --> E{Czy litera to '*'};
+    E -->|Tak| F[Zgadywanie liter];
+    E -->|Nie| G[Koniec];
+    F --> H{Czy zgadnięto poprawnie?};
+    H -->|Tak| I[Odkrycie poprawnej litery];
+    H -->|Nie| F;
+    I --> E;
+    G --> J[Zakończenie programu];
+```
+
 ## Podsumowanie
 - Program działa w **symulatorze SMS32**
 - **Język:** Asembler
