@@ -1,7 +1,7 @@
 # Maskowanie i zgadywanie liter – Projekt ASM
 
 ## Autor
-**[Twoje imię i nazwisko]**
+**Mateusz Konachowicz**
 
 ## Opis projektu
 Program napisany w asemblerze dla symulatora SMS32. Umożliwia:
@@ -92,8 +92,5 @@ JNZ SPRAWDZANIE_LITER
 - **Język:** Asembler
 - Można go rozwijać np. dodając licznik prób
 
-## Jak uruchomić?
-1. Pobierz **symulator SMS32**
-2. Załaduj plik `projekt.asm`
-3. Uruchom i testuj
+
 
